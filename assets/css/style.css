@@ -5,14 +5,22 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 :root {
   -primary: #9356dc;
   -secondary: #ff79da;
   -tertiary: #99e2d0;
-  -white--bg: #f6f6f6;
 }
 
-.grey {
+.main--bg {
+  background-color: #f6f6f6;
+}
+
+.grey--bg {
   background-color: #eaeaea;
 }
 
@@ -28,4 +36,36 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+
+/* font weight  */
+
+.w300 {
+  font-weight: 300;
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.w500 {
+  font-weight: 500;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+/* font size */
+
+.s16 {
+  font-size: 16px;
+}
+
+.s17 {
+  font-size: 17px;
+}
+
+.s18 {
+  font-size: 18px;
 }
