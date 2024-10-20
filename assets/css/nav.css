@@ -1,1 +1,45 @@
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 20px 68px 20px;
+  gap: 25px;
+  background-color: #fff;
+}
 
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
+
+  background-color: #f6f6f6;
+  width: 100%;
+  gap: 27px;
+  padding: 28px 0px 28px 35px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px #00000026;
+}
+.mobile-svg1,
+.mobile-svg2,
+.mobile-svg3 {
+  position: relative;
+}
+
+.mobile-svg1 {
+  left: -292px;
+}
+
+.mobile-svg2 {
+  left: -279px;
+}
+
+.mobile-svg3 {
+  left: -286px;
+}
