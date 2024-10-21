@@ -6,15 +6,23 @@
   text-decoration: none;
 }
 
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 html {
   height: 100%;
   width: 100%;
 }
 
 :root {
-  -primary: #9356dc;
-  -secondary: #ff79da;
-  -tertiary: #99e2d0;
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --tertiary: #99e2d0;
+  --green--dark: #008766;
+  --blue--light: #89c8fa;
+  --blue--dark: #003a68;
 }
 
 .main--bg {
@@ -27,9 +35,6 @@ html {
 
 .fff {
   color: #fff;
-}
-
-.clean {
 }
 
 /* font family  */
@@ -76,4 +81,8 @@ html {
 
 .s18 {
   font-size: 18px;
+}
+
+.s24 {
+  font-size: 24px;
 }
