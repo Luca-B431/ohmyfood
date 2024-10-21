@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+  background-color: #353535;
+  padding: 20px;
+}
+
+.first-pack,
+.second-pack,
+.third-pack,
+.fourth-pack {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
