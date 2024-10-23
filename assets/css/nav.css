@@ -15,10 +15,13 @@
   gap: 25px;
 }
 
+.nav-tab-container {
+  position: relative;
+}
+
 .tab-container article {
   display: flex;
   justify-content: flex-start;
-
   background-color: #f6f6f6;
   width: 100%;
   gap: 27px;
@@ -30,17 +33,17 @@
 .mobile-svg1,
 .mobile-svg2,
 .mobile-svg3 {
-  position: relative;
+  position: absolute;
 }
 
 .mobile-svg1 {
-  left: -292px;
+  left: -15px;
 }
 
 .mobile-svg2 {
-  left: -279px;
+  left: -13px;
 }
 
 .mobile-svg3 {
-  left: -286px;
+  left: -13px;
 }

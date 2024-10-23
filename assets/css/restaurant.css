@@ -55,11 +55,11 @@
 
 .new-tag {
   position: absolute;
-
   color: var(--green--dark);
   background-color: var(--tertiary);
   margin: 15px 15px 0px 0px;
   padding: 7px;
+  box-shadow: 0px 2px 4px 0px #00000026;
 }
 
 /* lower part of the card  */

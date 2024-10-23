@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px #00000026;
+}
+
+#logo {
+  height: 36px;
+  width: 197px;
+  margin: 30px 0px;
+}
+
+#arrow-back {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  margin-left: 23px;
+}
