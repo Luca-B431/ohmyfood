@@ -1,0 +1,195 @@
+@import url("./footer.scss");
+@import url("./header.scss");
+@import url("./headermenu.scss");
+@import url("./menu.scss");
+@import url("./nav.scss");
+@import url("./restaurant.scss");
+@import url("./welcome.scss");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --tertiary: #99e2d0;
+  --green--dark: #008766;
+  --blue--light: #89c8fa;
+  --blue--dark: #003a68;
+}
+
+.main--bg {
+  background-color: #f6f6f6;
+}
+
+.grey--bg {
+  background-color: #eaeaea;
+}
+
+.fff {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.hide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* font family  */
+
+.shrikhand {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* font weight  */
+
+.w300 {
+  font-weight: 300;
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.w500 {
+  font-weight: 500;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+/* font size */
+
+.s16 {
+  font-size: 16px;
+}
+
+.s17 {
+  font-size: 17px;
+}
+
+.s18 {
+  font-size: 18px;
+}
+
+.s24 {
+  font-size: 24px;
+}
+
+.s28 {
+  font-size: 28px;
+}
+
+/* media queries */
+
+@media (min-width: 1439.99px) {
+  /* nav container  */
+
+  main .tab-container {
+    padding: 50px 180px;
+  }
+
+  .tab-container .nav-container {
+    flex-direction: row;
+  }
+
+  .nav-container .nav-tab-container {
+    width: 335px;
+  }
+  /* restaurant container */
+
+  main .restaurant-container {
+    align-items: center;
+    padding: 30px 180px;
+  }
+
+  .restaurant-container .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px 100px;
+    padding-top: 28px;
+  }
+
+  .restaurant-container .restaurant-card {
+    width: 462px;
+  }
+
+  .restaurant-container h3 {
+    align-self: flex-start;
+  }
+
+  /* menu container  */
+
+  body main {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main #menu-container {
+    width: 100%;
+    max-width: 1055px;
+    margin-top: -30px;
+  }
+
+  main .title-container {
+    justify-content: center;
+    gap: 24px;
+  }
+
+  /* footer  */
+
+  body footer {
+    flex-direction: row-reverse;
+    padding: 64px 90px 30px 0px;
+  }
+
+  footer .footer-container {
+    flex-direction: row;
+  }
+
+  .footer-container .first-pack,
+  .third-pack {
+    padding-right: 7px;
+  }
+
+  .footer-container .second-pack {
+    padding-right: 32px;
+  }
+
+  .footer-container .fourth-pack {
+    padding-right: 100px;
+  }
+}

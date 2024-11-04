@@ -1,3 +1,4 @@
+#1
 La palette du goût
 
 Entrées
@@ -28,6 +29,7 @@ Aux agrumes
 44€
         
 Desserts
+
 Paris-Brest
 Revisité
 18€
@@ -40,51 +42,8 @@ Mousse au chocolat
 Au piment d'Espelette et à la truffe noire
 23€  
   
----     
-
-Le délice des sens
-
-Entrées
-Tartare de thon
-Assaisonné au yuzu
-25€
-
-Bouchée de homard croustillant 
-Et sa farandole de petits légumes
-35€
-
-Velouté de cèpes 
-Aux truffes
-20€
-        
-Plats
-Poulet rôti aux herbes de Provence 
-Et sa crème de truffe
-40€
-
-Langouste rôtie 
-Et ses légumes de saison
-35€
-
-Côte de bœuf Angus 
-Et sa purée de panais
-44€
-
-Desserts
-Farandole de desserts
-Du chef
-18€
-
-Crème brulée 
-Revisitée
-22€
-
-Tiramisu 
-À la noisette
-23€
-
 ---
-
+#2
 La note enchantée
 
 Entrées
@@ -171,4 +130,50 @@ Revisité
 
 Millefeuille croustillant
 Myrtilles et pâte d’amande
+23€
+
+---
+
+#4
+Le délice des sens
+
+Entrées
+
+Tartare de thon
+Assaisonné au yuzu
+25€
+
+Bouchée de homard croustillant 
+Et sa farandole de petits légumes
+35€
+
+Velouté de cèpes 
+Aux truffes
+20€
+        
+Plats
+
+Poulet rôti aux herbes de Provence 
+Et sa crème de truffe
+40€
+
+Langouste rôtie 
+Et ses légumes de saison
+35€
+
+Côte de bœuf Angus 
+Et sa purée de panais
+44€
+
+Desserts
+Farandole de desserts
+Du chef
+18€
+
+Crème brulée 
+Revisitée
+22€
+
+Tiramisu 
+À la noisette
 23€

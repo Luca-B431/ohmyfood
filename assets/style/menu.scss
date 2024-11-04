@@ -1,0 +1,212 @@
+main img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+article {
+  border-radius: 25px;
+}
+
+/* main container */
+
+#menu-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  gap: 40px;
+  border-radius: 25px 25px 0px 0px;
+  padding: 32px 13px 17px 13px;
+  margin-top: -50px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* block & title  */
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container-title::after {
+  display: block;
+  content: "";
+  background-color: var(--tertiary);
+  padding: 1.5px 20px;
+  margin-top: 8px;
+  width: 0%;
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 69px;
+  border-radius: 15px;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 4.01px 15.04px 0px #0000001a;
+}
+
+.parent {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 10px;
+}
+
+.price-container {
+  margin-left: auto;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  gap: 5px;
+}
+
+.price {
+  display: inline-block;
+  top: 55%;
+  right: 15px;
+  margin-left: 5px;
+  transition: all 0.25s;
+}
+
+.hidden-block {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 100%;
+  height: 69px;
+  width: 59px;
+  transition: all 0.25s;
+  background-color: var(--tertiary);
+}
+
+.card:hover .hidden-block {
+  transform: translateX(-59px);
+}
+
+.card:hover .price {
+  transform: translateX(-59px);
+}
+
+// #1 HOVER BUTTON & MENu ORDER BUTTON
+
+// welcome button
+
+$button-padding: 13px 18.75px;
+$button-border-radius: 25px;
+$button-transition: all 0.5s;
+$button-background: linear-gradient(
+  193.33deg,
+  #9356dc -11.44%,
+  #ff79da 123.93%
+);
+$button-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$hover-opacity: 0.8;
+$hover-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+
+.button {
+  opacity: 1;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  transition: $button-transition;
+  background: $button-background;
+  box-shadow: $button-shadow;
+
+  &:hover {
+    opacity: $hover-opacity;
+    box-shadow: $hover-shadow;
+  }
+}
+
+// order
+
+$button-width: 186px;
+$button-padding: 13px 18.75px;
+$button-border-radius: 25px;
+$button-transition: all 0.5s;
+$button-opacity: 1;
+$button-background: linear-gradient(
+  193.33deg,
+  #9356dc -11.44%,
+  #ff79da 123.93%
+);
+$button-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$hover-opacity: 0.8;
+$hover-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+
+.order-button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: $button-width;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  transition: $button-transition;
+  opacity: $button-opacity;
+  background: $button-background;
+  box-shadow: $button-shadow;
+
+  &:hover {
+    opacity: $hover-opacity;
+    box-shadow: $hover-shadow;
+  }
+}
+
+// #2 HEART
+
+$heart-z-index: 1;
+$heart-opacity: 0;
+$f-heart-opacity: 0;
+
+/* heart hover animation */
+.heart {
+  cursor: pointer;
+  position: absolute;
+  transition: all 0s;
+  z-index: $heart-z-index;
+
+  &:hover {
+    opacity: $heart-opacity;
+
+    + .f-heart {
+      opacity: 1;
+    }
+  }
+}
+
+.f-heart {
+  position: relative;
+  opacity: $f-heart-opacity;
+}
+
+// #3 card hover animation
