@@ -24,14 +24,12 @@ html {
   width: 100%;
 }
 
-:root {
-  --primary: #9356dc;
-  --secondary: #ff79da;
-  --tertiary: #99e2d0;
-  --green--dark: #008766;
-  --blue--light: #89c8fa;
-  --blue--dark: #003a68;
-}
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$green--dark: #008766;
+$blue--light: #89c8fa;
+$blue--dark: #003a68;
 
 .main--bg {
   background-color: #f6f6f6;

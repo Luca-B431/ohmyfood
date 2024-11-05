@@ -1,3 +1,5 @@
+$tertiary: #99e2d0;
+
 main img {
   height: 250px;
   width: 100%;
@@ -41,7 +43,7 @@ article {
 .container-title::after {
   display: block;
   content: "";
-  background-color: var(--tertiary);
+  background-color: $tertiary;
   padding: 1.5px 20px;
   margin-top: 8px;
   width: 0%;
@@ -107,7 +109,7 @@ article {
   height: 69px;
   width: 59px;
   transition: all 0.25s;
-  background-color: var(--tertiary);
+  background-color: $tertiary;
 }
 
 .card:hover .hidden-block {
@@ -208,5 +210,3 @@ $f-heart-opacity: 0;
   position: relative;
   opacity: $f-heart-opacity;
 }
-
-// #3 card hover animation

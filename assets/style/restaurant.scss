@@ -1,3 +1,6 @@
+$tertiary: #99e2d0;
+$green--dark: #008766;
+
 /* containers */
 
 .restaurant-container {
@@ -55,8 +58,8 @@
 
 .new-tag {
   position: absolute;
-  color: var(--green--dark);
-  background-color: var(--tertiary);
+  color: $green--dark;
+  background-color: $tertiary;
   margin: 15px 15px 0px 0px;
   padding: 7px;
   box-shadow: 0px 2px 4px 0px #00000026;
