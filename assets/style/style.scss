@@ -53,6 +53,14 @@ $blue--dark: #003a68;
   white-space: nowrap;
 }
 
+.hidden-svg {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
 /* font family  */
 
 .shrikhand {

@@ -82,14 +82,22 @@ article {
   margin-left: auto;
 }
 
-.text-container {
-  display: flex;
-  flex-direction: column;
+.truncate {
+  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
-  gap: 5px;
+}
+
+.text-container {
+  // display: flex;
+  // flex-direction: column;
+  overflow: hidden;
+  // width: 100%;
+  flex-grow: 1;
+  width: 0;
+  // gap: 5px;
 }
 
 .price {
