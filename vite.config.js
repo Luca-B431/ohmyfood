@@ -3,6 +3,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base:  "https://luca-b431.github.io/ohmyfood/",
   build: {
     rollupOptions: {
       input: {
