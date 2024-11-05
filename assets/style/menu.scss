@@ -78,10 +78,6 @@ article {
   padding: 10px;
 }
 
-.price-container {
-  margin-left: auto;
-}
-
 .truncate {
   display: block;
   overflow: hidden;
@@ -91,13 +87,9 @@ article {
 }
 
 .text-container {
-  // display: flex;
-  // flex-direction: column;
   overflow: hidden;
-  // width: 100%;
   flex-grow: 1;
   width: 0;
-  // gap: 5px;
 }
 
 .price {

@@ -150,6 +150,7 @@ $blue--dark: #003a68;
     width: 462px;
   }
 
+
   .restaurant-container h3 {
     align-self: flex-start;
   }
@@ -197,5 +198,18 @@ $blue--dark: #003a68;
 
   .footer-container .fourth-pack {
     padding-right: 100px;
+  }
+}
+
+
+@media (min-width: 1439.99px) {
+
+  .restaurant-container a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .restaurant-container h3 {
+    align-self: center;;
   }
 }
