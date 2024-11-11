@@ -1,0 +1,54 @@
+$tertiary: #99e2d0;
+$green--dark: #008766;
+
+.loading-screen {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: #fff;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: visibility 2s;
+    visibility: hidden;
+
+    animation-name: visibility;
+    animation-duration: 1.5s;
+}
+
+.loading-item {
+position: relative;
+height : 50px;
+top: 50%;
+border-radius: 25px;
+border: 5px dashed $tertiary;
+width: 50px;
+background-color: #fff;  
+
+animation-name: loading-animation;
+animation-duration: 1.5s;
+animation-timing-function: cubic-bezier(0.175, 1.885, 0.12, 1.275);
+}
+
+@keyframes visibility {
+    0% {
+visibility: visible;
+    }
+    100% {
+visibility: hidden;
+    }
+}
+
+@keyframes loading-animation {
+        0%{
+         transform: translateY(5000%) rotate(360deg);
+        }
+        20%{
+            transform:  rotate(-720deg);
+        }
+        100% {
+            transform:  rotate(480deg);
+        }
+}
