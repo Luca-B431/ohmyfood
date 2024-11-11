@@ -16,6 +16,7 @@ article {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
   z-index: 1;
   width: 100%;
   gap: 40px;
@@ -118,95 +119,4 @@ article {
 
 .card:hover .price {
   transform: translateX(-59px);
-}
-
-// #1 HOVER BUTTON & MEN ORDER BUTTON
-
-// welcome button
-
-$button-padding: 13px 18.75px;
-$button-border-radius: 25px;
-$button-transition: all 0.5s;
-$button-background: linear-gradient(
-  193.33deg,
-  #9356dc -11.44%,
-  #ff79da 123.93%
-);
-$button-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-$hover-opacity: 0.8;
-$hover-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-
-.button {
-  opacity: 1;
-  padding: $button-padding;
-  border-radius: $button-border-radius;
-  transition: $button-transition;
-  background: $button-background;
-  box-shadow: $button-shadow;
-
-  &:hover {
-    opacity: $hover-opacity;
-    box-shadow: $hover-shadow;
-  }
-}
-
-// order
-
-$button-width: 186px;
-$button-padding: 13px 18.75px;
-$button-border-radius: 25px;
-$button-transition: all 0.5s;
-$button-opacity: 1;
-$button-background: linear-gradient(
-  193.33deg,
-  #9356dc -11.44%,
-  #ff79da 123.93%
-);
-$button-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-$hover-opacity: 0.8;
-$hover-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-
-.order-button {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: $button-width;
-  padding: $button-padding;
-  border-radius: $button-border-radius;
-  transition: $button-transition;
-  opacity: $button-opacity;
-  background: $button-background;
-  box-shadow: $button-shadow;
-
-  &:hover {
-    opacity: $hover-opacity;
-    box-shadow: $hover-shadow;
-  }
-}
-
-// #2 HEART
-
-$heart-z-index: 1;
-$heart-opacity: 0;
-$f-heart-opacity: 0;
-
-/* heart hover animation */
-.heart {
-  cursor: pointer;
-  position: absolute;
-  transition: all 0s;
-  z-index: $heart-z-index;
-
-  &:hover {
-    opacity: $heart-opacity;
-
-    + .f-heart {
-      opacity: 1;
-    }
-  }
-}
-
-.f-heart {
-  position: relative;
-  opacity: $f-heart-opacity;
 }

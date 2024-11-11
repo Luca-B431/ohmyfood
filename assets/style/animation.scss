@@ -1,0 +1,208 @@
+$tertiary: #99e2d0;
+
+// welcome button
+
+$button-padding: 13px 18.75px;
+$button-border-radius: 25px;
+$button-transition: all 0.5s;
+$button-background: linear-gradient(
+  193.33deg,
+  #9356dc -11.44%,
+  #ff79da 123.93%
+);
+$button-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$hover-opacity: 0.8;
+$hover-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+
+.button {
+  opacity: 1;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  transition: $button-transition;
+  background: $button-background;
+  box-shadow: $button-shadow;
+
+  &:hover {
+    opacity: $hover-opacity;
+    box-shadow: $hover-shadow;
+  }
+}
+
+// order
+
+$button-width: 186px;
+$button-padding: 13px 18.75px;
+$button-border-radius: 25px;
+$button-transition: all 0.5s;
+$button-opacity: 1;
+$button-background: linear-gradient(
+  193.33deg,
+  #9356dc -11.44%,
+  #ff79da 123.93%
+);
+$button-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$hover-opacity: 0.8;
+$hover-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+
+.order-button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: $button-width;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  transition: $button-transition;
+  opacity: $button-opacity;
+  background: $button-background;
+  box-shadow: $button-shadow;
+
+  &:hover {
+    opacity: $hover-opacity;
+    box-shadow: $hover-shadow;
+  }
+}
+
+// heart animation
+
+$heart-z-index: 1;
+$heart-opacity: 0;
+$f-heart-opacity: 0;
+
+/* heart hover animation */
+.heart {
+  cursor: pointer;
+  position: absolute;
+  transition: all 0s;
+  z-index: $heart-z-index;
+
+  &:hover {
+    opacity: $heart-opacity;
+
+    + .f-heart {
+      opacity: 1;
+    }
+  }
+}
+
+.f-heart {
+  position: relative;
+  opacity: $f-heart-opacity;
+}
+
+
+// loading screen
+
+.loading-screen {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: #fff;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: visibility 2s;
+    visibility: hidden;
+
+    animation-name: visibility;
+    animation-duration: 1.5s;
+}
+
+.loading-item {
+position: relative;
+height : 50px;
+top: 50%;
+border-radius: 25px;
+border: 5px dashed $tertiary;
+width: 50px;
+background-color: #fff;  
+
+animation-name: loading-animation;
+animation-duration: 1.5s;
+animation-timing-function: cubic-bezier(0.175, 1.885, 0.12, 1.275);
+}
+
+@keyframes visibility {
+    0% {
+visibility: visible;
+    }
+    100% {
+visibility: hidden;
+    }
+}
+
+@keyframes loading-animation {
+        0%{
+         transform: translateY(5000%) rotate(360deg);
+        }
+        20%{
+            transform:  rotate(-720deg);
+        }
+        100% {
+            transform:  rotate(480deg);
+        }
+}
+
+// menu tab parade animation
+
+#card1 {
+  animation-name: parade;
+  animation-duration: 200ms;
+  animation-timing-function: ease-in-out;
+}
+
+#card2 {
+  animation-name: parade;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+}
+
+#card3 {
+  animation-name: parade;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+}
+
+#card4 {
+  animation-name: parade;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+}
+#card5 {
+  animation-name: parade;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+}
+
+#card6 {
+  animation-name: parade;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in-out;
+}
+
+#card7 {
+  animation-name: parade;
+  animation-duration: 1400ms;
+  animation-timing-function: ease-in-out;
+}
+#card8 {
+  animation-name: parade;
+  animation-duration: 1600ms;
+  animation-timing-function: ease-in-out;
+}
+
+#card9 {
+  animation-name: parade;
+  animation-duration: 1800ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes parade {
+  0% {
+transform: translateX(-1000px);
+  }
+  100% {
+transform: translateX(0px);
+  }
+}
