@@ -1,10 +1,19 @@
+.tab-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  background-color: #fff;
+}
+
 .tab-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   padding: 48px 20px 68px 20px;
   gap: 25px;
-  background-color: #fff;
 }
 
 .nav-container {
@@ -14,6 +23,10 @@
   align-items: center;
   width: 100%;
   gap: 25px;
+}
+
+.nav-container h2 {
+  align-self: flex-start;
 }
 
 .nav-tab-container {

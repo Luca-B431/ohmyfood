@@ -3,6 +3,11 @@ $green--dark: #008766;
 
 /* containers */
 
+.up-container {
+  display: flex;
+  justify-content: center;
+    }
+
 .restaurant-container {
   display: flex;
   flex-direction: column;
@@ -21,6 +26,11 @@ $green--dark: #008766;
 }
 
 /* card adjust */
+
+.restaurant-card a {
+  max-width: 480px;
+  width: 10%;
+}
 
 .restaurant-card {
   width: 100%;
