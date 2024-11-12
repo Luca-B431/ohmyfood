@@ -69,25 +69,46 @@ $heart-opacity: 0;
 $f-heart-opacity: 0;
 
 /* heart hover animation */
-.heart {
+.heart-box {
   cursor: pointer;
+  position: relative;
+  display: inline-block;
+  position: relative;
+  width: 30px; 
+  height: 30px;
+}
+
+
+.heart {
   position: absolute;
-  transition: all 0s;
-  z-index: $heart-z-index;
-
-  &:hover {
-    opacity: $heart-opacity;
-
-    + .f-heart {
-      opacity: 1;
-    }
-  }
+  visibility: visible;
+  z-index: 199;
 }
 
 .f-heart {
   position: relative;
-  opacity: $f-heart-opacity;
+  visibility: hidden; 
 }
+
+.posadjust {
+  top : 25%;
+  left: 25%;
+}
+
+.heart-box:hover .heart {
+visibility: hidden;
+}
+
+.heart-box:hover .f-heart {
+  visibility: visible;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  color: transparent;
+  }
+
+
+
+
 
 
 // loading screen
@@ -106,7 +127,7 @@ $f-heart-opacity: 0;
     visibility: hidden;
 
     animation-name: visibility;
-    animation-duration: 1.5s;
+    animation-duration: 4s;
 }
 
 .loading-item {
@@ -119,7 +140,7 @@ width: 50px;
 background-color: #fff;  
 
 animation-name: loading-animation;
-animation-duration: 1.5s;
+animation-duration: 2s;
 animation-timing-function: cubic-bezier(0.175, 1.885, 0.12, 1.275);
 }
 
@@ -127,7 +148,14 @@ animation-timing-function: cubic-bezier(0.175, 1.885, 0.12, 1.275);
     0% {
 visibility: visible;
     }
+    1% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
     100% {
+      opacity: 0;
 visibility: hidden;
     }
 }
@@ -136,7 +164,7 @@ visibility: hidden;
         0%{
          transform: translateY(5000%) rotate(360deg);
         }
-        20%{
+      40%{
             transform:  rotate(-720deg);
         }
         100% {
