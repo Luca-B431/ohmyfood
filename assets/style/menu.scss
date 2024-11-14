@@ -1,9 +1,10 @@
 $tertiary: #99e2d0;
 
 main img {
-  height: 250px;
+  height: 275px;
   width: 100%;
   object-fit: cover;
+  object-position: center 60%;
 }
 
 article {
@@ -97,7 +98,7 @@ article {
   display: inline-block;
   top: 55%;
   right: 15px;
-  margin-left: 5px;
+  margin-left: 15px;
   transition: all 0.25s;
 }
 
