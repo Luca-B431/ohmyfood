@@ -250,6 +250,7 @@ main {
   /* footer  */
 
 footer {
+  display: flex;
     flex-direction: row-reverse;
     padding: 64px 90px 30px 0px;
   }
