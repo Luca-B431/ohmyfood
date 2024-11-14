@@ -113,6 +113,13 @@ article {
   background-color: $tertiary;
 }
 
+.check-icon {
+  background-color: #fff;
+border-radius: 100%;
+padding: 2px 3px;
+  color: $tertiary;
+}
+
 .card:hover .hidden-block {
   transform: translateX(-59px);
 }
